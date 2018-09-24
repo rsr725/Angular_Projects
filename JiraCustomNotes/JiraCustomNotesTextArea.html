@@ -1,0 +1,19 @@
+<script>
+function saveNotesClicked() {
+	var evt = document.createEvent('Event');
+	evt.initEvent('saveJiraNotes', true, false);
+
+	// fire the event
+	document.dispatchEvent(evt);
+}
+</script>
+<div id="customNotes-web-panel" class="module toggle-wrap">
+    <div id="greenhopper-agile-issue-web-panel_heading" class="mod-header">
+        <ul class="ops"></ul>
+        <h2 class="toggle-title"><div id='cjn_username'></div></h2>
+    </div>
+    <div class="mod-content">
+		<textarea class="form-control" rows="5" id="customNotes-textarea" placeholder="Enter some notes..." style="width:100%"></textarea>
+		<button class="aui-button aui-button-primary aui-style" id="customNotes-saveNotes" onclick="saveNotesClicked()" >Save</button>
+    </div>
+</div>

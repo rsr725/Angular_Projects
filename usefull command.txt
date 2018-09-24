@@ -1,0 +1,12 @@
+1. Copy paste node_modules
+2. npm install @angular/core
+3. npm install @angular-devkit/build-angular
+
+To copy folder to another folder using cmd.
+xcopy sourcedirectory destination /E
+example:-
+/E - Copies folders and subfolders, including empty ones. 
+/H - Copies hidden and system files also. 
+/K - Copies attributes. Typically, Xcopy resets read-only attributes.
+/O - Copies file ownership and ACL information.
+/X - Copies file audit settings (implies /O).

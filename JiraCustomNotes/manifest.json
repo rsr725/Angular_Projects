@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+
+  "name": "JIRA custom notes",
+  "description": "This plugin allows user to add any custom notes that are visible only to that particular user.",
+  "version": "1.0",
+
+  "browser_action": {
+   "default_icon": "icon.png",
+   "default_popup": "JiraCustomNotes.html"
+  },
+  "content_scripts": [ {
+      "matches": ["*://*.jira.eclinicalworks.com/*", "*://*.10.100.20.32/*"],
+      "js": ["jquery-3.3.1.slim.min.js", "JiraCustomNotes.min.js"]
+    } ],
+  "permissions": [
+		"activeTab",
+        "storage"
+   ]
+}
